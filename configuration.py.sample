@@ -1,0 +1,30 @@
+# Configuration Template for Media Archiver
+# Copy this file to 'config.py' and adjust settings.
+
+# --- PATHS ---
+# Source path (e.g., your mounted disk in WSL)
+SOURCE_PATH = "/mnt/d"
+
+# Destination for organized library
+DESTINATION_PATH = "/mnt/storage/organized_library"
+
+# File to store recognized device signatures (Excluded from Git)
+CATALOG_FILE = "catalog.json"
+
+# --- DISK IDENTIFICATION ---
+# Used for the 'Misc' folder path to identify which disk the media came from
+DISK_ID = "disk_01"
+
+# --- SAMPLING SETTINGS (Phase 1) ---
+# Stop after inspecting this many files
+TARGET_FILE_COUNT = 500
+# Stop after finding this many new unique camera signatures
+TARGET_VENDOR_COUNT = 5
+
+# --- ARCHIVER SETTINGS (Phase 2) ---
+# How to organize the folders. Variables: {device}, {year}, {month}, {day}
+PATH_TEMPLATE = "{device}/{year}/{month}"
+
+# --- MEDIA SETTINGS ---
+# Supported extensions for media (lowercase)
+EXTENSIONS = {'.jpg', '.jpeg', '.png', '.mp4', '.mov', '.avi', '.m4v'}

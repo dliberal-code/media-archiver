@@ -15,3 +15,7 @@ Thumbs.db
 *.csv
 catalog.json
 sample_results/
+
+#Configuration
+config.py
+catalog.json
