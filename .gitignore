@@ -1,0 +1,17 @@
+#Python
+pycache/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+#OS
+.DS_Store
+Thumbs.db
+
+#Project Specific
+*.log
+*.csv
+catalog.json
+sample_results/
