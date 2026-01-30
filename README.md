@@ -18,8 +18,9 @@ Or create a `sync.sh` file:
 ```bash
 #!/bin/bash
 git add .
-git commit -m "chore: ${1:-'Manual archive update'}"
+git commit -m "${1:-'chore: Manual archive update'}"
 git push origin main
+
 ```
 
 ## Phase 1: Metadata Sampling & Cataloging (sampler.py)
