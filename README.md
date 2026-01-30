@@ -1,4 +1,4 @@
-#Media Organization Architecture
+# Media Organization Architecture
 
 ## Overview
 A two-phase automated system designed to identify primary capture devices and systematically organize mixed media from multiple source disks into a structured, deduplicated library.
